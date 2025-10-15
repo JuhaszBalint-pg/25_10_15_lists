@@ -14,13 +14,9 @@ for i in range (10):
     gennums.append(x)
 
 print (gennums)
-ui = int(input("Adj meg egy számot 1 és három között, amit kitöröljek!\n"))
+ui = int(input("Adj meg egy számot 1 és három között, amit kitöröljek!"))
 
-for i in gennums:
-    delnum = gennums.remove(ui)
-    if delnum == 0:
-        break
-    else:
-        continue
+while ui in gennums:
+    gennums.remove(ui)
        
 print (gennums)
